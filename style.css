@@ -1,0 +1,50 @@
+body{
+
+  background-image: url("images/coarserougheverywhere.jpg"); 
+}
+img{
+    
+    text-anchor: : center;      
+    width: 150px;
+    height: 150px;
+}
+
+
+img.whatabout{
+    
+    display: block;
+    margin: auto;
+    width: 40%;
+    }
+
+body{
+
+  text-align: center;
+
+}
+
+p{
+
+  font-family:  "Palatino Linotype";
+}
+p.question{
+    font-family:  "Palatino Linotype";
+    text-align: center;
+    font-size: 20px;
+
+
+}
+
+ul{
+
+    font-family:  "Palatino Linotype";
+    text-align: center;
+
+}
+
+img{
+  text-align: center;
+}
+/*SFS light red = #c30b0a;
+SFS dark red = #9f2026; */
+
