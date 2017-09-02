@@ -1,0 +1,143 @@
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="app.js""></script>
+
+<body>
+  <h2 class="quizHeader">I've been on r/PrequelMemes too much quiz.</h2>
+
+  <button id="startButton" onclick="startQuiz()">Take a quiz, young Skywalker.</button>
+  <div id="visibleTimer"></div>
+
+ <!--style was made in line, I am basing this around other code I found and decided arbitrarily on 666 for the prequel meme reference-->
+	<table style="width:666px">
+	<tr>
+	  <td>
+	  	<div>
+	  		<p class="question">1. Not just the men but the- </p>
+
+	    	<ul>
+	    	<input class="answer" type="radio" name="question1" value="1">
+	        <label id="correctAnswer1">women and children too</label>
+	    	<br>
+	        <input class="answer" type="radio" name="question1" value="0">
+	        <label>horses too</label>
+	        <br>
+	        <input class="answer" type="radio" name="question1" value="0">
+	        <label>systemic oppression of the working class</label>
+	        <br>
+	        <input class="answer" type="radio" name="question1" value="0">
+	        <label>jedi</label>
+    		</ul>
+	  	</div>
+	  </td>
+	 </tr>
+
+	 	<tr>
+	  <td>
+	  	<div>
+	  		<p class="question">2. Most pressing matter for the Jedi Council is-</p>
+			<img class="whatabout" src="images/whatabout.jpg">
+	    	<ul>
+	    	<input class="answer" type="radio" name="question2" value="1">
+	        <label>Sith Lords</label>
+	    	<br>
+	        <input class="answer" type="radio" name="question2" value="0">
+	        <label>Sente Politics</label>
+	        <br>
+	        <input class="answer" type="radio" name="question2" value="0">
+	        <label>Mastering the Force</label>
+	        <br>
+	        <input class="answer" type="radio" name="question2" value="1">
+	        <label id="correctAnswer2">The Droid Attack on the Wookies!?</label>
+    		</ul>
+	  	</div>
+	  </td>
+	 </tr>
+	 	<tr>
+	  <td>
+	  	<div>
+	  		<p class="question">3. Twice the Pride, double the-</p>
+
+	    	<ul>
+	    	<input class="answer" type="radio" name="question3" value="0">
+	        <img src=images/spring.jpg ></img>
+	    	<br>
+	        <input class="answer" type="radio" name="question3" value="0">
+	        <img src=images/summer.jpg></img>
+	        <br>
+	        <input class="answer" type="radio" name="question3" value="1">
+	        <label id = "correctAnswer3"><img src=images/fall.jpg></img>
+	        <br>
+	        <input class="answer" type="radio" name="question3" value="0">
+	        <img src=images/winter.jpg></img>
+    		</ul>
+	  	</div>
+	  </td>
+	 </tr>
+	 	<tr>
+	  <td>
+	  	<div>
+	  		<p class="question">4. Select the final stage PrequelMeme.</p>
+
+	    	<ul>
+	    	<input class="answer" type="radio" name="question4" value="0">
+	        <img src=images/jediDrakeLate.jpg></img>
+	    	<br>
+	        <input class="answer" type="radio" name="question4" value="0">
+	        <img src=images/cheatingDrake.jpg id="correctString1"></img>
+	        <br>
+	        <input class="answer" type="radio" name="question4" value="0">
+	        <img src=images/jediDrakefinal.jpg></img>
+	        <br>
+	        <input class="answer" type="radio" name="question4" value="1">
+	        <label id="correctAnswer4">All wrong answers, logical conclusions don't exist on r/PrequelMemes.</label>
+    		</ul>
+	  	</div>
+	  </td>
+	 </tr>
+	 <tr>
+	  <td>
+	  	<div>
+	  		<p class="question">5. Now this is-</p>
+
+	    	<ul>
+	    	<input class="answer" type="radio" name="question5" value="0">
+	        <label id="correctString1">CNN</label>
+	    	<br>
+	        <input class="answer" type="radio" name="question5" value="0">
+	        <label>Is What I Call Music</label>
+	        <br>
+	        <input class="answer" type="radio" name="question5" value="0">
+	        <label>A Plot to Destroy the Jedi</label>
+	        <br>
+	        <input class="answer" type="radio" name="question5" value="1">
+	        <label id="correctAnswer5">Podracing!</label>
+    		</ul>
+	  	</div>
+	  </td>
+	 </tr>
+	
+	</table>
+<br/>
+  <div class="submitter">
+          <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
+          type="submit" value="Submit" />
+    </div>
+  
+<!--adds class ID's for each answer for manipulation later-->
+    <div class="quizAnswers" id="correctAnswer1"></div>
+    <div class="quizAnswers" id="correctAnswer2"></div>
+    <div class="quizAnswers" id="correctAnswer3"></div>
+    <div class="quizAnswers" id="correctAnswer4"></div>
+    <div class="quizAnswers" id="correctAnswer5"></div>
+
+
+
+<!--This is the part for showing the player's score at the end when the submition happens.-->
+    <div>
+    	<h2 class="quizScore" id="userScore"></h2>
+    </div>
+	</div>
+
+</body>
+
